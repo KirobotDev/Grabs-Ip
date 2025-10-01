@@ -32,8 +32,8 @@ Bienvenue dans **Kiro$B IP Grabber**, un outil web sophistiqué conçu pour capt
 ### ⚙️ Installation
 1. **Cloner le dépôt** :
    ```bash
-   git clone <url-du-dépôt>
-   cd <dossier-du-dépôt>
+   git clone <https://github.com/KirobotDev/Grabs-Ip>
+   cd <t>
    ```
 
 2. **Installer les dépendances** :
@@ -157,7 +157,7 @@ Welcome to **Kiro$B IP Grabber**, a sleek web-based tool designed to capture vis
 ### ⚙️ Installation
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/KirobotDev/Grabs-Ip>
    cd <repository-folder>
    ```
 
