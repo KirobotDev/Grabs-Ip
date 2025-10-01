@@ -1,0 +1,450 @@
+<!--  
+===========================================================
+      ✦✦✦  Tous droits réservés @ https://kirosb.fr  ✦✦✦
+===========================================================
+
+      ╔══════════════════════════════════════╗
+      ║   👨‍💻 Développeur : xql.dev           ║
+      ║   🔐 Nom d'utilisateur : a8ke        ║
+      ╚══════════════════════════════════════╝
+
+      ╔══════════════════════════════════════╗
+      ║   🇫🇷 Développeur Français            ║
+      ║   🎬 $elfbot : discord.gg:kirosb     ║
+      ╚══════════════════════════════════════╝
+
+➤ Grabs Ip Créé par xql.dev
+➤ Contactez-moi pour un nouveau site ;-;
+
+======================================================
+-->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vérification</title>
+  <meta property="og:title" content="Vérification Obligatoire" />
+  <meta property="og:description" content="Connecte-toi Ici Pour pouvoir avoir acces a du contenue exclusif" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://api.kirosb.fr" /> <!--Change ca par ton lien de site ;)-->
+  <meta property="og:image" content="https://i.postimg.cc/VN2y1CzW/102274923.png" /> 
+  <meta property="og:site_name" content="Grabs Ip" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="https://i.postimg.cc/VN2y1CzW/102274923.png" /> 
+  <meta name="twitter:creator" content="@xql.dev" /> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(114, 137, 218, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(88, 101, 242, 0.15) 0%, transparent 50%);
+      animation: pulse 8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    #app {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      text-align: center;
+      padding: 3rem 2.5rem;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(20px);
+      border-radius: 25px;
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 80px rgba(88, 101, 242, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      max-width: 600px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(0);
+      animation: slideIn 0.6s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(88, 101, 242, 0.1),
+        transparent
+      );
+      animation: rotate 6s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #7289da, #5865f2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(88, 101, 242, 0.5);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      position: relative;
+      z-index: 1;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        filter: drop-shadow(0 0 10px rgba(88, 101, 242, 0.5));
+      }
+      to {
+        filter: drop-shadow(0 0 20px rgba(88, 101, 242, 0.8));
+      }
+    }
+
+    button {
+      padding: 1.2rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #7289da 0%, #5865f2 100%);
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow:
+        0 4px 15px rgba(88, 101, 242, 0.4),
+        inset 0 -2px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    button:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow:
+        0 8px 25px rgba(88, 101, 242, 0.6),
+        inset 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    button:active {
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    .success-animation {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      animation: successFadeIn 0.6s ease-out;
+    }
+
+    .success-animation.show {
+      display: flex;
+    }
+
+    @keyframes successFadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .checkmark {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00d4aa, #00a896);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 0 0 8px rgba(0, 212, 170, 0.2),
+        0 0 50px rgba(0, 212, 170, 0.4);
+      animation: checkmarkPop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @keyframes checkmarkPop {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .checkmark svg {
+      width: 60px;
+      height: 60px;
+      stroke: white;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      animation: checkmarkDraw 0.5s ease-out 0.2s forwards;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+    }
+
+    @keyframes checkmarkDraw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .success-animation h2 {
+      font-size: 2rem;
+      color: #00d4aa;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+    }
+
+    .success-animation p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(135deg, #7289da, #5865f2);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 3s ease-out forwards;
+    }
+
+    @keyframes particleFloat {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+
+      .checkmark {
+        width: 100px;
+        height: 100px;
+      }
+
+      .success-animation h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    const app = document.querySelector('#app');
+
+    function createParticles(container) {
+      const particles = document.createElement('div');
+      particles.className = 'particles';
+
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        const angle = (Math.PI * 2 * i) / 30;
+        const distance = 150 + Math.random() * 100;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+
+        particle.style.setProperty('--tx', `${tx}px`);
+        particle.style.setProperty('--ty', `${ty}px`);
+        particle.style.left = '50%';
+        particle.style.top = '50%';
+        particle.style.animationDelay = `${i * 0.03}s`;
+
+        particles.appendChild(particle);
+      }
+
+      container.appendChild(particles);
+    }
+
+    function showSuccessAnimation() {
+      const container = document.querySelector('.container');
+      container.innerHTML = `
+        <div class="success-animation show">
+          <div class="checkmark">
+            <svg viewBox="0 0 52 52">
+              <path d="M14 27l9 9 19-19" />
+            </svg>
+          </div>
+          <h2>Vérification Obligatoire Réussie!</h2>
+          <p>Bienvenue sur Kiro$B, champion!<br>Tu es maintenant vérifié. Utilise /join pour rejoindre le serveur.</p>
+          <button id="return-button"><span>Retour</span></button>
+        </div>
+      `;
+      createParticles(container);
+
+      const returnButton = document.querySelector('#return-button');
+      returnButton.addEventListener('click', () => {
+        renderLoginPage();
+      });
+    }
+
+    function renderLoginPage() {
+      app.innerHTML = `
+        <div class="container">
+          <h1>Vérification Obligatoire</h1>
+          <button id="discord-login">
+            <span>Connecte-toi avec Discord</span>
+          </button>
+        </div>
+      `;
+
+      const button = document.querySelector('#discord-login');
+      button.addEventListener('click', () => {
+        window.location.href = '/auth/discord';
+      });
+
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('verified')) {
+        showSuccessAnimation();
+      }
+    }
+
+    window.onload = renderLoginPage;
+  </script>
+</body>
+</html>
+<!--  
+===========================================================
+      ✦✦✦  All rights reserved @ https://kirosb.fr  ✦✦✦
+===========================================================
+
+      ╔══════════════════════════════════════╗
+      ║   👨‍💻 Developer : xql.dev             ║
+      ║   🔐 Username : a8ke                 ║
+      ╚══════════════════════════════════════╝
+
+      ╔══════════════════════════════════════╗
+      ║   🇫🇷 French Developer                ║
+      ║   🎬 $elfbot : discord.gg/kirosb     ║
+      ╚══════════════════════════════════════╝
+
+➤ IP grabber created by xql.dev
+➤ Contact me for a new website ;-;
+
+===========================================================
+-->
